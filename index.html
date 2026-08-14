@@ -409,6 +409,7 @@
       document.getElementById('configName').value = editing && command ? command.configName : '';
       document.getElementById('modalCode').value = code;
       document.getElementById('promotionType').value = editing && command && command.promotionType ? command.promotionType : 'registration';
+      document.getElementById('promotionType').disabled = editing;
       document.getElementById('modalCode').disabled = editing;
       document.getElementById('verifyCodeBtn').style.display = editing ? 'none' : '';
       document.getElementById('fillDemoBtn').style.display = editing ? 'none' : '';
